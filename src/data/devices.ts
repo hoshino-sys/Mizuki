@@ -20,19 +20,19 @@ export const devicesData: DeviceCategory = {
 		{
 			name: "OnePlus 13T",
 			image: "/images/device/oneplus13t.png",
-			specs: "Gray / 16G + 1TB",
+			specs: "灰色 / 16G + 1TB",
 			description:
-				"Flagship performance, Hasselblad imaging, 80W SuperVOOC.",
+				"旗舰性能，哈苏影像，80W 超级闪充。",
 			link: "https://www.oneplus.com/cn/13t",
 		},
 	],
-	Router: [
+	路由器: [
 		{
 			name: "GL-MT3000",
 			image: "/images/device/mt3000.png",
 			specs: "1000Mbps / 2.5G",
 			description:
-				"Portable WiFi 6 router suitable for business trips and home use.",
+				"便携式 WiFi 6 路由器，适合出差和家用。",
 			link: "https://www.gl-inet.cn/products/gl-mt3000/",
 		},
 	],

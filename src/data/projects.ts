@@ -1,5 +1,5 @@
-// Project data configuration file
-// Used to manage data for the project display page
+// 项目数据配置文件
+// 用于管理项目展示页面的数据
 
 export interface Project {
 	id: string;
@@ -21,9 +21,9 @@ export interface Project {
 export const projectsData: Project[] = [
 	{
 		id: "mizuki-blog",
-		title: "Mizuki Blog Theme",
+		title: "Mizuki 博客主题",
 		description:
-			"Modern blog theme developed based on the Astro framework, supporting multilingual, dark mode, and responsive design features.",
+			"基于 Astro 框架开发的现代博客主题，支持多语言、暗色模式和响应式设计等功能。",
 		image: "",
 		category: "web",
 		techStack: ["Astro", "TypeScript", "Tailwind CSS", "Svelte"],
@@ -34,13 +34,13 @@ export const projectsData: Project[] = [
 		startDate: "2024-01-01",
 		endDate: "2024-06-01",
 		featured: true,
-		tags: ["Blog", "Theme", "Open Source"],
+		tags: ["博客", "主题", "开源"],
 	},
 	{
 		id: "portfolio-website",
-		title: "Personal Portfolio",
+		title: "个人作品集",
 		description:
-			"Personal portfolio website showcasing project experience and technical skills.",
+			"个人作品集网站，展示项目经验和技术能力。",
 		image: "",
 		category: "web",
 		techStack: ["React", "Next.js", "TypeScript", "Framer Motion"],
@@ -51,25 +51,25 @@ export const projectsData: Project[] = [
 		startDate: "2023-09-01",
 		endDate: "2023-12-01",
 		featured: true,
-		tags: ["Portfolio", "React", "Animation"],
+		tags: ["作品集", "React", "动画"],
 	},
 	{
 		id: "task-manager-app",
-		title: "Task Manager App",
+		title: "任务管理应用",
 		description:
-			"Cross-platform task management application supporting team collaboration and project management.",
+			"跨平台任务管理应用，支持团队协作和项目管理。",
 		image: "",
 		category: "mobile",
 		techStack: ["React Native", "TypeScript", "Redux", "Firebase"],
 		status: "in-progress",
 		startDate: "2024-03-01",
-		tags: ["Mobile", "Productivity", "Team Collaboration"],
+		tags: ["移动端", "效率工具", "团队协作"],
 	},
 	{
 		id: "data-visualization-tool",
-		title: "Data Visualization Tool",
+		title: "数据可视化工具",
 		description:
-			"Data visualization tool supporting multiple chart types and interactive analysis.",
+			"数据可视化工具，支持多种图表类型和交互式分析。",
 		image: "",
 		category: "web",
 		techStack: ["Vue.js", "D3.js", "TypeScript", "Node.js"],
@@ -78,23 +78,23 @@ export const projectsData: Project[] = [
 		visitUrl: "https://dataviz.example.com", // 添加前往项目链接
 		startDate: "2023-06-01",
 		endDate: "2023-11-01",
-		tags: ["Data Visualization", "Analytics", "Charts"],
+		tags: ["数据可视化", "数据分析", "图表"],
 	},
 	{
 		id: "e-commerce-platform",
-		title: "E-commerce Platform",
+		title: "电商平台",
 		description:
-			"Full-stack e-commerce platform including user management, product management, and order processing features.",
+			"全栈电商平台，包含用户管理、商品管理和订单处理等功能。",
 		image: "",
 		category: "web",
 		techStack: ["Next.js", "Node.js", "PostgreSQL", "Stripe"],
 		status: "planned",
 		startDate: "2024-07-01",
-		tags: ["E-commerce", "Full Stack", "Payment Integration"],
+		tags: ["电商", "全栈", "支付集成"],
 	},
 ];
 
-// Get project statistics
+// 获取项目统计数据
 export const getProjectStats = () => {
 	const total = projectsData.length;
 	const completed = projectsData.filter(
@@ -115,7 +115,7 @@ export const getProjectStats = () => {
 	};
 };
 
-// Get projects by category
+// 按分类获取项目
 export const getProjectsByCategory = (category?: string) => {
 	if (!category || category === "all") {
 		return projectsData;
@@ -123,12 +123,12 @@ export const getProjectsByCategory = (category?: string) => {
 	return projectsData.filter((p) => p.category === category);
 };
 
-// Get featured projects
+// 获取精选项目
 export const getFeaturedProjects = () => {
 	return projectsData.filter((p) => p.featured);
 };
 
-// Get all tech stacks
+// 获取所有技术栈
 export const getAllTechStack = () => {
 	const techSet = new Set<string>();
 	projectsData.forEach((project) => {
