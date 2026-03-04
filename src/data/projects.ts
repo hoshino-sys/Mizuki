@@ -21,7 +21,7 @@ export interface Project {
 export const projectsData: Project[] = [
 	{
 		id: "mizuki-blog",
-		title: "Mizuki 博客主题",
+		title: "NightStar 博客",
 		description:
 			"基于 Astro 框架开发的现代博客主题，支持多语言、暗色模式和响应式设计等功能。",
 		image: "",

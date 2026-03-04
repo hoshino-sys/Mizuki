@@ -10,7 +10,7 @@ draft: true
 
 这篇文章目前处于草稿状态，尚未发布。因此，普通访客无法看到它。内容仍在编写中，可能需要进一步编辑和审校。
 
-当文章准备好发布时，你可以将 Frontmatter 中的 "draft" 字段更新为 "false"：
+当文章准备好发布时，将 Frontmatter 中的 "draft" 字段更新为 "false"
 
 ```markdown
 ---
