@@ -25,7 +25,7 @@ export const friendsData: FriendItem[] = [
 		title: "Fxup",
 		imgurl: "http://tv.fxup.de/image/%E9%9C%B2%E6%98%93%E4%B8%9DQ%E7%89%88.png",
 		desc: "记录技术成长，分享生活点滴。",
-		siteurl: "fxup.de",
+		siteurl: "https://fxup.de",
 		tags: ["emm"],
 	},
 	{
