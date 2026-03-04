@@ -22,11 +22,11 @@ export const friendsData: FriendItem[] = [
 	},
 	{
 		id: 2,
-		title: "Mizuki 文档",
-		imgurl: "http://q.qlogo.cn/headimg_dl?dst_uin=3231515355&spec=640&img_type=jpg",
-		desc: "Mizuki 用户手册",
-		siteurl: "https://docs.mizuki.mysqil.com",
-		tags: ["文档"],
+		title: "Fxup",
+		imgurl: "http://tv.fxup.de/image/%E9%9C%B2%E6%98%93%E4%B8%9DQ%E7%89%88.png",
+		desc: "记录技术成长，分享生活点滴。",
+		siteurl: "fxup.de",
+		tags: ["emm"],
 	},
 	{
 		id: 3,
