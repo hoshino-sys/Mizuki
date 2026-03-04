@@ -53,7 +53,7 @@ export const siteConfig: SiteConfig = {
 		// 显示模式："text-icon" 显示图标+文本，"logo" 仅显示Logo
 		mode: "logo",
 		// 顶栏标题文本
-		text: "MizukiUI",
+		text: "夜星",
 		// 顶栏标题图标路径，默认使用 public/assets/home/home.png
 		icon: "assets/home/home.png",
 		// 网站Logo图片路径
@@ -63,7 +63,7 @@ export const siteConfig: SiteConfig = {
 	// 页面自动缩放配置
 	pageScaling: {
 		enable: true, // 是否开启自动缩放
-		targetWidth: 2000, // 目标宽度，低于此宽度时开始缩放
+		targetWidth: 1600, // 目标宽度，低于此宽度时开始缩放
 	},
 
 	bangumi: {
@@ -140,7 +140,7 @@ export const siteConfig: SiteConfig = {
 
 		carousel: {
 			enable: true, // 为 true 时：为多张图片启用轮播。为 false 时：从数组中随机显示一张图片
-			interval: 3, // 轮播间隔时间（秒）
+			interval: 6, // 轮播间隔时间（秒）
 		},
 
 		waves: {
@@ -435,9 +435,9 @@ export const expressiveCodeConfig: ExpressiveCodeConfig = {
 };
 
 export const commentConfig: CommentConfig = {
-	enable: false, // 启用评论功能。当设置为 false 时，评论组件将不会显示在文章区域。
+	enable: true, // 启用评论功能。当设置为 false 时，评论组件将不会显示在文章区域。
 	twikoo: {
-		envId: "https://twikoo.vercel.app",
+		envId: "https://twikoo-vercel-nu-ochre.vercel.app",
 		lang: SITE_LANG,
 	},
 };
