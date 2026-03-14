@@ -635,10 +635,12 @@ onDestroy(() => {
         interactionEvents.forEach(event => {
             document.removeEventListener(event, handleUserInteraction, { capture: true });
         });
+		document.removeEventListener("swup:transitionStart", persistStateImmediately, true);
     }
+	if (typeof window !== "undefined") {
 	window.removeEventListener("pagehide", persistStateImmediately, { capture: true });
 	window.removeEventListener("beforeunload", persistStateImmediately, { capture: true });
-	document.removeEventListener("swup:transitionStart", persistStateImmediately, true);
+	}
 	if (persistTimeout) {
 		clearTimeout(persistTimeout);
 		persistTimeout = null;
